@@ -1,0 +1,16 @@
+.iot-box {
+  padding: 2px;
+  margin: -17px -17px;
+}
+.iot-container {
+  background:#c2c2c2;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  margin-bottom: 15px;
+}
+.iot-container > h2{
+  padding:10px;
+}
+.iot-body{
+  display: flex;
+  flex-wrap: wrap;
+}

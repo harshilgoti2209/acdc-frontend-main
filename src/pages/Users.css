@@ -1,0 +1,19 @@
+#add-user-modal{
+    /* background-color: red; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#add-user-modal >div{
+    margin:6px;
+}
+#add-user-modal>div:last-child{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+#add-user-modal>div:last-child >div{
+    margin:auto 5px;
+}
