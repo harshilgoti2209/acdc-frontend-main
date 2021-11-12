@@ -57,7 +57,7 @@ export default function Logs() {
                 <TableCell align="center">{row.name}</TableCell>
                 <TableCell align="center">{row.log}</TableCell>
                 <TableCell align="center">{unixToDate(row.time)}</TableCell>
-                <TableCell align="center">{row.time}</TableCell>
+                <TableCell align="center">{row.time}</TableCell> 
               </TableRow>
             ))}
           </TableBody>

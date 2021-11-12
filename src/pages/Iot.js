@@ -21,7 +21,7 @@ export default function Iot() {
   };
   useEffect(() => {
     data();
-    setInterval(data, 1000);
+    setInterval(data, 1000); 
     return () => {
       setIot({ meta: [], data: [] });
     };
