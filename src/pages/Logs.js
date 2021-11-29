@@ -10,9 +10,6 @@ import Paper from "@material-ui/core/Paper";
 
 import { api } from "../constants";
 
-const row={
-  backGroundColor:'red'
-}
 export default function Logs() {
   const [log, setLog] = useState([]);
 
@@ -53,7 +50,7 @@ export default function Logs() {
           </TableHead>
           <TableBody>
             {log.map((row, index) => (
-              <TableRow key={index} style={{backgroundColor:row.name=='server'?'rgb(231 231 231 / 87%)':''}}>
+              <TableRow key={index} style={{backgroundColor:row.name==='server'?'rgb(231 231 231 / 87%)':''}}>
                 <TableCell align="center">{row.name}</TableCell>
                 <TableCell align="center">{row.log}</TableCell>
                 <TableCell align="center">{unixToDate(row.time)}</TableCell>

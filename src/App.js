@@ -31,6 +31,10 @@ export default function App() {
               <Home />
             </Route>
 
+            <Route exact path="/setting">
+              <Home />
+            </Route>
+
             <Route exact path="/admin/report">
               <Home />
             </Route>

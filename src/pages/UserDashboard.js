@@ -13,6 +13,7 @@ import Typography from "@material-ui/core/Typography";
 import Divider from "@material-ui/core/Divider";
 import IconButton from "@material-ui/core/IconButton";
 import MenuIcon from "@material-ui/icons/Menu";
+import SettingsIcon from '@mui/icons-material/Settings';
 import ChevronLeftIcon from "@material-ui/icons/ChevronLeft";
 import ChevronRightIcon from "@material-ui/icons/ChevronRight";
 import ListItem from "@material-ui/core/ListItem";
@@ -23,6 +24,7 @@ import { useHistory, NavLink, Switch, Route, Redirect } from "react-router-dom";
 
 import Iot from "./Iot";
 import Logs from "./Logs";
+import Setting from "./Setting";
 
 const drawerWidth = 230;
 
@@ -158,6 +160,7 @@ export default function DashBoard() {
           {[
             { name: "Home", link: "/", icon: <HomeIcon /> },
             { name: "Logs", link: "/admin/logs", icon: <DeviceHubIcon /> },
+            { name: "Setting", link: "/setting", icon: <SettingsIcon /> },
           ].map((text, index) => (
             <NavLink
               to={text.link}
@@ -189,6 +192,9 @@ export default function DashBoard() {
           </Route>
           <Route exact path="/admin/logs">
             <Logs />
+          </Route>
+          <Route exact path="/setting">
+            <Setting />
           </Route>
           <Redirect to="/" />
         </Switch>

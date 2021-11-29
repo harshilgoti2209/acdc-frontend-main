@@ -1,0 +1,30 @@
+.setting-container > div:first-child{
+    background-color: rgb(75, 95, 206);
+    height: 40px;
+    color: white ;
+    font-size: 22px;
+    display: flex;
+    padding-left: 10px;
+    align-items: center;
+    font-weight: bold;
+    border-radius: 3px;
+    margin-bottom: 3px;
+    
+}
+
+.editname-container{
+    display: flex;
+    flex-wrap: nowrap;
+    margin: 15px auto;
+}
+
+.editname-container>div{
+    border: 1px solid rgb(54, 54, 54);
+    margin: 2px;
+    padding: 4px;
+    border-radius: 4px;
+}
+.group-form{
+    display: flex;
+    margin: 20px 20%;
+}

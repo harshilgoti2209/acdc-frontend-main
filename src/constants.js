@@ -17,4 +17,12 @@ export const api = {
   users: url + "users",
   iots: url + "iots",
   logs: url + "logs",
+
+  savegroup:`${url}savegroup`,
+  getgroup:`${url}getgroup`,
+  deletegroup:`${url}deletegroup`,
+  editgroup:`${url}editgroup`,
+  setgroup:`${url}setgroup`,
+  ongroup:`${url}ongroup`,
+  offgroup:`${url}offgroup`,
 };
